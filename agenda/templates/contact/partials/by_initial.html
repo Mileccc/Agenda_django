@@ -1,0 +1,5 @@
+<ul class="lista-letras">
+    {%for letra in 'abcdefghijklmnñopqrstuvwxyz'%}
+    <li><a href="{%url 'contact' letter=letra %}">{{letra | upper}}</a></li>
+    {%endfor%}
+</ul>
